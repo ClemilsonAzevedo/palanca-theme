@@ -1,0 +1,219 @@
+/*
+ * Palanca for Obsidian
+ * By Clemilson Azevedo — MIT License
+ * Palette shared with themes/zed/palanca-theme.json.
+ */
+
+.theme-dark {
+  color-scheme: dark;
+
+  --color-base-00: #000000;
+  --color-base-05: #060606;
+  --color-base-10: #101010;
+  --color-base-20: #1a1a1a;
+  --color-base-25: #232323;
+  --color-base-30: #282828;
+  --color-base-35: #404040;
+  --color-base-40: #505050;
+  --color-base-50: #7e7e7e;
+  --color-base-60: #a0a0a0;
+  --color-base-70: #cccccc;
+  --color-base-100: #fafafa;
+
+  --accent-h: 176;
+  --accent-s: 48%;
+  --accent-l: 68%;
+  --color-accent: #86d4cf;
+  --color-accent-1: #9adcd8;
+  --color-accent-2: #afe4e1;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --text-on-accent: #060606;
+  --text-on-accent-inverted: #fafafa;
+
+  --color-red: #e99898;
+  --color-red-rgb: 233, 152, 152;
+  --color-orange: #edb299;
+  --color-orange-rgb: 237, 178, 153;
+  --color-yellow: #e7c27a;
+  --color-yellow-rgb: 231, 194, 122;
+  --color-green: #90b99f;
+  --color-green-rgb: 144, 185, 159;
+  --color-cyan: #86d4cf;
+  --color-cyan-rgb: 134, 212, 207;
+  --color-blue: #8eb9f0;
+  --color-blue-rgb: 142, 185, 240;
+  --color-purple: #aca1cf;
+  --color-purple-rgb: 172, 161, 207;
+  --color-pink: #e29eca;
+  --color-pink-rgb: 226, 158, 202;
+
+  --background-primary: #000000;
+  --background-primary-alt: #060606;
+  --background-secondary: #060606;
+  --background-secondary-alt: #000000;
+  --background-modifier-hover: #282828;
+  --background-modifier-active-hover: #232323;
+  --background-modifier-border: #232323;
+  --background-modifier-border-hover: #404040;
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: #101010;
+  --background-modifier-error: #a84a4a;
+  --background-modifier-error-rgb: 168, 74, 74;
+  --background-modifier-error-hover: #bf5c5c;
+  --background-modifier-success: #90b99f;
+  --background-modifier-message: #1a1a1a;
+  --background-modifier-cover: #000000b3;
+
+  --text-normal: #fafafa;
+  --text-muted: #a0a0a0;
+  --text-faint: #7e7e7e;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: #e99898;
+  --text-success: #90b99f;
+  --text-warning: #e7c27a;
+  --text-selection: #a7715a66;
+  --text-highlight-bg: #e7c27a33;
+  --text-highlight-bg-active: #e7c27a55;
+  --caret-color: var(--color-accent);
+  --interactive-normal: #1a1a1a;
+  --interactive-hover: #282828;
+
+  --titlebar-background: #000000;
+  --titlebar-background-focused: #060606;
+  --titlebar-text-color: var(--text-muted);
+  --titlebar-text-color-focused: var(--text-normal);
+  --ribbon-background: #000000;
+  --ribbon-background-collapsed: #000000;
+  --tab-container-background: #000000;
+  --tab-background-active: #060606;
+  --tab-text-color: var(--text-muted);
+  --tab-text-color-active: #fffff5;
+  --tab-text-color-focused-active: #fffff5;
+  --tab-text-color-focused-active-current: var(--color-accent);
+  --tab-divider-color: transparent;
+  --tab-outline-color: #232323;
+  --status-bar-background: #000000;
+  --status-bar-text-color: var(--text-muted);
+  --status-bar-border-color: #232323;
+  --divider-color: #232323;
+  --divider-color-hover: var(--color-accent);
+  --workspace-background-translucent: #000000d9;
+
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--color-accent);
+  --nav-item-background-hover: #282828;
+  --nav-item-background-active: #232323;
+  --nav-collapse-icon-color: var(--text-faint);
+  --nav-collapse-icon-color-collapsed: var(--text-muted);
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--color-accent);
+  --icon-color-focused: var(--color-accent);
+
+  --h1-color: var(--color-accent);
+  --h2-color: var(--color-accent);
+  --h3-color: var(--color-accent);
+  --h4-color: var(--color-accent);
+  --h5-color: var(--color-accent);
+  --h6-color: var(--color-accent);
+  --inline-title-color: #fffff5;
+  --bold-color: var(--text-normal);
+  --italic-color: var(--text-normal);
+  --link-color: var(--color-accent);
+  --link-color-hover: var(--text-normal);
+  --link-external-color: var(--color-accent);
+  --link-external-color-hover: var(--text-normal);
+  --link-unresolved-color: var(--color-accent);
+  --link-unresolved-opacity: 0.65;
+  --blockquote-color: #edb299;
+  --blockquote-border-color: #edb299;
+  --blockquote-background-color: #edb29908;
+  --hr-color: #282828;
+  --list-marker-color: var(--text-muted);
+  --list-marker-color-hover: var(--color-accent);
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-border-color: var(--text-faint);
+  --checkbox-border-color-hover: var(--color-accent);
+  --checkbox-marker-color: #060606;
+  --checklist-done-color: var(--text-faint);
+  --tag-color: var(--color-accent);
+  --tag-color-hover: var(--color-accent-1);
+  --tag-background: #86d4cf14;
+  --tag-background-hover: #86d4cf26;
+  --tag-border-color: #86d4cf33;
+  --tag-border-color-hover: #86d4cf66;
+  --indentation-guide-color: #282828;
+  --indentation-guide-color-active: #505050;
+
+  --code-background: #101010;
+  --code-normal: #a0a0a0;
+  --code-comment: #686a6e;
+  --code-function: #86d4cf;
+  --code-important: #e99898;
+  --code-keyword: #f28c8c;
+  --code-operator: #f28c8c;
+  --code-property: #fafafa;
+  --code-punctuation: #a0a0a0;
+  --code-string: #edb299;
+  --code-tag: #86d4cf;
+  --code-value: #86d4cf;
+
+  --table-border-color: #282828;
+  --table-header-background: #1a1a1a;
+  --table-header-background-hover: #232323;
+  --table-header-color: var(--text-normal);
+  --table-row-alt-background: #060606;
+  --table-row-alt-background-hover: #1a1a1a;
+  --table-selection: #86d4cf1a;
+  --table-selection-border-color: var(--color-accent);
+  --search-result-background: #060606;
+  --search-match-color: var(--text-normal);
+  --search-match-background: #40404090;
+  --background-modifier-flair: #232323;
+  --modal-background: #1a1a1a;
+  --prompt-background: #1a1a1a;
+  --menu-background: #1a1a1a;
+  --popover-background: #1a1a1a;
+
+  --scrollbar-bg: #00000010;
+  --scrollbar-thumb-bg: #40404060;
+  --scrollbar-active-thumb-bg: #505050;
+  --graph-line: #282828;
+  --graph-node: #a0a0a0;
+  --graph-node-unresolved: #505050;
+  --graph-node-focused: var(--color-accent);
+  --graph-node-tag: #edb299;
+  --graph-node-attachment: #aca1cf;
+}
+
+/* The same subtle active line and gutter as the Zed edition. */
+.theme-dark .markdown-source-view.mod-cm6 .cm-active {
+  background-color: #40404030;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-gutters {
+  color: #505050;
+  background-color: transparent;
+  border: none;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-activeLineGutter {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-matchingBracket {
+  color: var(--text-normal);
+  background-color: #50505040;
+}
+
+/* Keep fenced code foreground distinct from inline code. */
+.theme-dark .markdown-rendered pre,
+.theme-dark .markdown-rendered pre code,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  color: var(--text-normal);
+}

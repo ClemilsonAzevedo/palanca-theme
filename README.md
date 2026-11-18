@@ -1,8 +1,49 @@
 # Palanca Theme
 
-A dark theme for Zed (and other editors), inspired by [Vesper](https://github.com/raunofreiberg/vesper).
+A dark theme for Zed and Obsidian, inspired by [Vesper](https://github.com/raunofreiberg/vesper).
 
-## Screenshots
+## Obsidian
+
+A versão para Obsidian mantém o fundo preto e a paleta do Palanca: turquesa nos
+destaques, pêssego nas strings e citações, e rosa nas palavras-chave do código.
+Inclui cores para a interface, Markdown, Live Preview, modo de leitura e grafo.
+
+### Instalação manual
+
+1. Abra a pasta do seu cofre (vault) no gerenciador de arquivos e habilite a
+   exibição de arquivos ocultos.
+2. Dentro de `.obsidian/themes/`, crie uma pasta chamada `Palanca`.
+3. Copie os arquivos [`theme.css`](themes/obsidian/theme.css) e
+   [`manifest.json`](themes/obsidian/manifest.json) de `themes/obsidian/` para ela:
+
+   ```text
+   Seu cofre/
+   └── .obsidian/
+       └── themes/
+           └── Palanca/
+               ├── manifest.json
+               └── theme.css
+   ```
+
+4. No Obsidian, abra **Configurações → Aparência**, escolha o esquema de cores
+   **Escuro** e selecione **Palanca** em **Temas**.
+   Se ele não aparecer, reinicie o aplicativo.
+
+Se você usa uma pasta de configuração personalizada, substitua `.obsidian` pelo
+nome dessa pasta. Para atualizar o tema, substitua os dois arquivos.
+
+### Modo escuro e transparência
+
+O tema foi desenvolvido para o modo escuro e tem **suporte parcial à
+transparência**. Ele define a variável `--workspace-background-translucent`
+com a cor `#000000d9`, mas os fundos principais do editor e das barras laterais
+são opacos.
+
+Por isso, a versão atual não reproduz a transparência da versão para Zed.
+A variável, por si só, não ativa a transparência da janela: o efeito depende
+do suporte e das configurações do Obsidian e do sistema operacional.
+
+## Screenshots (Zed)
 
 ![Main Screenshot](./palanca-theme-screnshot-1.png)
 
@@ -10,7 +51,7 @@ A dark theme for Zed (and other editors), inspired by [Vesper](https://github.co
 
 ---
 
-## Como instalar
+## Como instalar no Zed
 
 Você pode instalar o Palanca de duas maneiras:
 
